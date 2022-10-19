@@ -108,6 +108,7 @@ cl_ulong4 Dispatcher::Device::createSeed() {
 #else
 	// Randomize private keys
 	std::random_device rd;
+	cl_ulong4 r;
 	//
 	uint64_t rt = rd();
 	uint64_t r1 = (rt << 32) | rd();
